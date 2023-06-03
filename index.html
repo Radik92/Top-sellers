@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -14,21 +17,25 @@
       <ul class="list top-sellers-about">
         <li class="top-sellers-about-item">
           <img class="image"
-        srcset="#"
-      src="#"
-      alt="#" width="368" height="464"
+        srcset="./images/top-sellers/sellers-img-1-mobile.jpg, ./image/top-sellers/sellers-img-1-mobile@2x.jpg,
+        ./image/top-sellers/sellers-img-1-tablet.jpg, ./image/top-sellers/sellers-img-1-tablet@2x.jpg,
+        ./image/top-sellers/sellers-img-1-desktop.jpg, ./image/top-sellers/sellers-img-1-desktop@2x.jpg" 
+      src="./images/top-sellers/sellers-img-1-mobile.jpg"
+      alt="chocolate-coffee-nut" width="368" height="464"
     </li>
         <li class="top-sellers-about-item">
           <img class="image"
-        srcset="#"
-      src="#"
-      alt="#" width="368" height="464"
+        srcset="./images/top-sellers/sellers-img-2-mobile.jpg, ./image/top-sellers/sellers-img-2-mobile@2x.jpg,
+        ./image/top-sellers/sellers-img-2-tablet.jpg,  ./image/top-sellers/sellers-img-2-tablet@2x.jpg, 
+        ./image/top-sellers/sellers-img-2-desktop.jpg, ./image/top-sellers/sellers-img-2-desktop@2x.jpg"
+      src="./images/top-sellers/sellers-img-2-mobile.jpg"
+      alt="chocolate-with-nuts" width="368" height="464"
     </li>
         <li class="top-sellers-about-item">
           <img class="image"
-        srcset="#"
-      src="#"
-      alt="#" width="368" height="464"
+        srcset="./images/top-sellers/sellers-img-3-desktop.jpg, ./image/top-sellers/sellers-img-3-desktop@2x.jpg"
+      src="./images/top-sellers/sellers-img-3-desktop.jpg"
+      alt="chocolate-pyramid" width="368" height="464"
     </li>
       </ul>
       <div class="top-sellers-paragraf"
@@ -36,7 +43,7 @@
         Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for
         thousands of years and was first discovered by the Native American tribe called the Mayans.
       </p>
-      <button class="top-sellers-btn" data-modal-open type="button">Buy now</button>
+      <button class="hero-btn hero-buy-btn" data-modal-open type="button">Buy now</button>
     </section>
 
 
@@ -77,27 +84,27 @@
           <form name="Personal information">
             <label class="buy-now-form" for="user-name">Personal information</label>
              <div>
-            <input class="buy-now-firm-field" placeholder="Name" type="text" name="user-name" id="user-name" />
+            <input class="buy-now-firm-field" placeholder="Name" type="text" name="user-name" id="user-name" required />
             <label class="buy-now-form" for="Surname-name"></label>
-            <input class="buy-now-firm-field" placeholder="Surname" type="text" name="Surname-name" id="Surname-name" />
+            <input class="buy-now-firm-field" placeholder="Surname" type="text" name="Surname-name" id="Surname-name" required />
           </div>
           <label class="buy-now-form" for="user-email">Email</label>
           <div>
-             <input class="buy-now-firm-field" placeholder="Enter your email" type="email" name="user-email"></label>
+             <input class="buy-now-firm-field" placeholder="Enter your email" type="email" name="user-email" required></label>
             </div>
             <form name="Phone number">
               <label class="buy-now-form" for="user-phone">Phone number</label>
               <div>
-<input class="buy-now-firm-field" placeholder="Phone number" type="tel" name="phone" id="user-phone">
+            <input class="buy-now-firm-field" placeholder="Phone number" type="tel" name="phone" id="user-phone" required required minlength="5" maxlength="15" />
               </div>
               <label class="buy-now-form" for="user-card">Card number</label>
               <div>
-                <input class="buy-now-firm-field" placeholder="Enter  card" type="tel" name="card" id="user-card">
+                <input class="buy-now-firm-field" placeholder="Enter  card" type="tel" name="card" id="user-card" required minlength="14" maxlength="16" />
               </div>
 
               <label class="buy-now-form" for="user-comment" for="user-comment">Comment</label>
                 <textarea class="buy-now-form-comment" name="comment" id="user-comment" rows="5" placeholder="Enter text"></textarea>
-  <button class="buy-now-form-btn" type="submit">Submit</button>
+             <button class="hero-btn hero-buy-btn" type="submit">Submit</button>
           </form>
           
             
