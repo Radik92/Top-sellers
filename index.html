@@ -14,6 +14,8 @@
     <!-- tOP SELLERS -->
     <section class="section top-sellers" >
       <h2 id="Topsellers" class="top-sellers-logo">TOP<span class="top-sellers-part"> SELLERS</span></h2>
+      <section class="top-sellers"
+      <div class="top-sellers-ul">
       <ul class="list top-sellers-about">
         <li class="top-sellers-about-item">
           <img class="image"
@@ -38,6 +40,7 @@
       alt="chocolate-pyramid" width="368" height="464"
     </li>
       </ul>
+    </div>
       <div class="top-sellers-buy">
       <p class="top-sellers-paragraf">
         Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for
@@ -50,7 +53,7 @@
     <!-- Modal Window TOP-SELLERS -->
     <div class="buy-now-backdrop is-hidden" data-modal>
       <div class="buy-now-modal">
-        <button type="button" class="buy-now-modal-close-btn" data-modal-close>
+        <button class="buy-now-modal-close-btn" type="button" data-modal-close>
           <svg class="buy-now-close-icon" width="14" heigth="14">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -61,23 +64,41 @@
           <li class="buy-now-menu-snacks-card">
             <button class=""
             <div class="buy-now-chocolate-bar">
-              <svg class="buy-now-chocolate-bar-icon" width="120" height="107"
+              <img class="image"
+              srcset="./images/top-sellers-modal/modal-img-1-mobile.png, ./images/top-sellers-modal/modal-img-1-mobile@2x.png,
+              ./images/top-sellers-modal/modal-img-1-desktop.png, ./images/top-sellers-modal/modal-img-1-desktop@2x.png"
+              src="./images/top-sellers-modal/modal-img-1-mobile.png" alt="
+chocolate cubes" width="120" height="107"
             </div>
             <div class="buy-now-chocolate-bar-gram"></div></li>
 
-            <li class="buy-now-menu-snacks-card">
+            <li class="buy-now-menu-snacks-card">       
             <button class=""
             <div class="buy-now-chocolate-bar">
-              <svg class="buy-now-chocolate-bar-icon" width="120" height="107"
+              <img class="image"
+              srcset="./images/top-sellers-modal/modal-img-2-mobile.png, ./images/top-sellers-modal/modal-img-2-mobile@2x.png,
+              ./images/top-sellers-modal/modal-img-2-desktop.png, ./images/top-sellers-modal/modal-img-2-desktop@2x.png"
+              src="./images/top-sellers-modal/modal-img-2-mobile.png"
+              <svg class="buy-now-chocolate-bar-icon" alt="milk and white chocolate" width="120" height="107"
             </div>
-            <div class="buy-now-chocolate-bar-gram"></div></li>
+            <div class="buy-now-chocolate-bar-gram">
+              
+            </div></li>
             
             <li class="buy-now-menu-snacks-card">
-            <button class=""
+          
             <div class="buy-now-chocolate-bar">
-              <svg class="buy-now-chocolate-bar-icon" width="120" height="107"
+              <img class="image"
+              srcset="./images/top-sellers-modal/modal-img-3-mobile.png, ./images/top-sellers-modal/modal-img-3-mobile@2x.png,
+              ./image/top-sellers-modal/modal-img-3-desktop.png, ./images/top-sellers-modal/modal-img-3-desktop@2x.png"
+              src="./images/top-sellers-modal/modal-img-3-mobile.png" 
+              <svg class="buy-now-chocolate-bar-icon" alt="Chocolate bar" width="120" height="107"
+              <div> <button class="" type="button">100 g</button></div> 
             </div>
-            <div class="buy-now-chocolate-bar-gram"></div></li>
+            <div class="buy-now-chocolate-bar-gram">
+
+            </div>
+          </li>
             </div>
           </ul>
 
@@ -95,7 +116,7 @@
             <form name="Phone number">
               <label class="buy-now-form" for="user-phone">Phone number</label>
               <div>
-            <input class="buy-now-firm-field" placeholder="Phone number" type="tel" name="phone" id="user-phone" required required minlength="5" maxlength="15" />
+            <input class="buy-now-firm-field" placeholder="Phone number" type="tel" type="number" name="phone" id="user-phone" required required minlength="5" maxlength="15" />
               </div>
               <label class="buy-now-form" for="user-card">Card number</label>
               <div>

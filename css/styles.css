@@ -113,6 +113,12 @@ body {
   overflow: hidden;
 }
 /*  */
+.top-sellers-about {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
 .top-sellers {
   background: #e2e2e2;
 }
@@ -153,6 +159,11 @@ body {
   height: 100%;
 
   backdrop-filter: 1px;
+}
+
+.buy-now-chocolate-bar {
+  display: flex;
+  justify-content: center;
 }
 
 .buy-now-backdrop.is-hidden {
@@ -200,6 +211,12 @@ body {
 
 .buy-now-close-icon {
   stroke: #111111;
+}
+
+.buy-now-menu-snacks {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
 }
 
 .hero-btn {
